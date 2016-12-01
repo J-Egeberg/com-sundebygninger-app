@@ -36,8 +36,8 @@ public class InvoiceServlet extends HttpServlet{
         processPost( request, response );
     }
 
-    protected void processPost(HttpServletRequest request, HttpServletResponse response) {
-
+    protected void processPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setContentType("tex");
     }
 
     @Override
