@@ -28,7 +28,6 @@
                 <%
                     List<Invoice> invoices = InvoiceController.getAllInvoices();
                     for (Invoice invoice : invoices) {
-
                         %>
                             <tr>
                                 <td> <% invoice.getInvoiceNumber(); %> </td>

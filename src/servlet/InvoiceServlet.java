@@ -19,7 +19,6 @@ public class InvoiceServlet extends HttpServlet{
 
     protected void processGet(HttpServletRequest request,HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        System.out.println( request.getRequestURI() );
         switch (request.getRequestURI()) {
             case "/invoices/index" :
                 ServletContext servletContext = getServletContext();
