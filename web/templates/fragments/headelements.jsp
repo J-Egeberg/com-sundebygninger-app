@@ -11,5 +11,4 @@
 <!-- CSS  -->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="/static/vendor/materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-<link href="/static/vendor/materialize/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 <link href="/static/sundebygninger.css" type="text/css" rel="stylesheet" media="screen,projection"/>
