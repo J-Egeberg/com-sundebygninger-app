@@ -11,11 +11,15 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
     <head>
-        <title>Title</title>
+        <title>Alle fakturaer</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
     <h1>Fakturaliste</h1>
-        <table>
+        <table class="tableSubHeadingColor">
             <thead>
                 <tr>
                     <th>Fakturanummer</th>
@@ -30,15 +34,25 @@
                     for (Invoice invoice : invoices) {
                         %>
                             <tr>
-                                <td> <% out.print( invoice.getInvoiceNumber() ); %> </td>
-                                <td> <% out.print( invoice.getCustomerFullName() ); %> </td>
-                                <td> <% out.print( invoice.getDate() );%> </td>
-                                <td> <% out.print( invoice.isSent() ? "Sendt" : "Afventer" ); %> </td>
+                                <td>
+                                    <a href="/invoices/<% out.print(invoice.getId()); %>"> <% out.print( invoice.getInvoiceNumber() ); %> </a>
+                                </td>
+                                <td>
+                                    <a href="/invoices/<% out.print(invoice.getId());%>"> <% out.print( invoice.getCustomerFullName() ); %> </a>
+                                </td>
+                                <td>
+                                    <a href="/invoices/<% out.print(invoice.getId());%>"> <% out.print( invoice.getCustomerFullName() ); %> </a>
+                                </td>
+                                <td>
+                                    <a href="/invoices/<%out.print(invoice.getId());%>"> <% out.print( invoice.isSent() ? "Sendt" : "Afventer" ); %> </a>
+                                </td>
                             </tr>
                         <%
                     }
                 %>
             </tbody>
         </table>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     </body>
 </html>

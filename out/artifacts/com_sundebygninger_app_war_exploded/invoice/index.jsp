@@ -15,7 +15,7 @@
     </head>
     <body>
     <h1>Fakturaliste</h1>
-        <table>
+        <table class="tableSubHeadingColor">
             <thead>
                 <tr>
                     <th>Fakturanummer</th>
@@ -30,7 +30,9 @@
                     for (Invoice invoice : invoices) {
                         %>
                             <tr>
-                                <td> <% out.print( invoice.getInvoiceNumber() ); %> </td>
+                                <td>
+                                    <a href="/invoices/<% out.print(invoice.getId()); %>"> <% out.print( invoice.getInvoiceNumber() ); %> </a>
+                                </td>
                                 <td> <% out.print( invoice.getCustomerFullName() ); %> </td>
                                 <td> <% out.print( invoice.getDate() );%> </td>
                                 <td> <% out.print( invoice.isSent() ? "Sendt" : "Afventer" ); %> </td>
