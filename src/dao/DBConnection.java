@@ -6,14 +6,14 @@ import java.sql.SQLException;
 
 public final class DBConnection {
 
-    public static String USER = "root";
-    public static String USERPW = "Highfem5";
-    public static String DBNAME = "app";
+    public static String USER = "java";
+    public static String USERPW = "password";
+    public static String DBNAME = "sundebygninger";
     public static String HOST = "localhost";
 
     public static Connection getConnection() throws SQLException, ClassNotFoundException {
 
-        String url = String.format("jdbc:mysql://%s:3306/%s?useSSL=false", HOST, DBNAME);
+        String url = String.format("jdbc:mysql://%s:3306/%s", HOST, DBNAME);
 
         Class.forName("com.mysql.jdbc.Driver");
 

@@ -27,7 +27,7 @@ public class DBInvoice {
                 invoice.setCustomerAddress(resultSet.getString("customerAddress"));
                 invoice.setEmployeeName(resultSet.getString("employeeName"));
                 invoice.setOfficeName(resultSet.getString("officeName"));
-                invoice.setOfficeAdress(resultSet.getString("officeAddress"));
+                invoice.setOfficeAdress(resultSet.getString("officeAdress"));
                 invoice.setDate(resultSet.getString("date"));
                 invoice.setPaymentDetails(resultSet.getString("paymentDetails"));
                 invoice.setTotalPrice(resultSet.getInt("totalPrice"));
@@ -37,7 +37,8 @@ public class DBInvoice {
             }
 
         } catch (SQLException | ClassNotFoundException exception) {
-            System.out.println( "Element not gotten: " + exception.getMessage() );
+            System.out.printf( "\n\nIn DBInvoice, couldn't do: %s\n\n", exception.getMessage() );
+            exception.printStackTrace();
         }
 
         return invoices;

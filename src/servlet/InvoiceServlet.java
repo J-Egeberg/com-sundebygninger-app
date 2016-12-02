@@ -12,7 +12,7 @@ import java.io.IOException;
 /**
  * Created by jensegebergrasmussen on 30/11/16.
  */
-@WebServlet( name = "InvoiceList", urlPatterns = { "/invoices/index", "/invoices/details", "/invoices/add" } )
+@WebServlet( name = "InvoiceList", urlPatterns = { "/invoices/*" } )
 public class InvoiceServlet extends HttpServlet {
 
     @Override
