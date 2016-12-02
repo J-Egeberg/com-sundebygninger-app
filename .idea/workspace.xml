@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c55aea2-8fa6-411f-b1d5-c8c33e5e01cc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/InvoiceServlet.java" afterPath="$PROJECT_DIR$/src/servlet/InvoiceServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/invoice/form.jsp" afterPath="$PROJECT_DIR$/web/invoice/form.jsp" />
-    </list>
+    <list default="true" id="6c55aea2-8fa6-411f-b1d5-c8c33e5e01cc" name="Default" comment="" />
     <ignored path="com-sundebygninger-app.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -919,16 +916,16 @@
       <workItem from="1480602291824" duration="603000" />
       <workItem from="1480602981042" duration="2678000" />
       <workItem from="1480607194083" duration="880000" />
-      <workItem from="1480609351741" duration="2861000" />
+      <workItem from="1480609351741" duration="3341000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7022000" />
+    <option name="totallyTimeSpent" value="7502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="606" y="40" width="2016" height="1141" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
