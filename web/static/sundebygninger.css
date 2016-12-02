@@ -1,0 +1,15 @@
+.nav-wrapper a#logo-container img {
+    width: 9rem;
+    padding-top: 7px;
+}
+
+.icon-block {
+    padding: 0 15px;
+}
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+.blue {
+    background-color: #009fe3 !important;
+}

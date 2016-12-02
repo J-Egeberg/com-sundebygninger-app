@@ -25,12 +25,12 @@ public class InvoiceServlet extends HttpServlet {
         switch (request.getRequestURI()) {
             case "/invoices/index" :
                 ServletContext servletContext = getServletContext();
-                RequestDispatcher requestDispatcher = servletContext.getRequestDispatcher("/invoice/index.jsp");
+                RequestDispatcher requestDispatcher = servletContext.getRequestDispatcher("/templates/invoice/index.jsp");
                 requestDispatcher.forward(request, response);
             case "/invoices/add" :
-                getServletContext().getRequestDispatcher("/invoice/form.jsp").forward(request, response);
+                getServletContext().getRequestDispatcher("/templates/invoice/form.jsp").forward(request, response);
             case "/invoices/details" :
-                getServletContext().getRequestDispatcher("/invoice/details.jsp").forward(request, response);
+                getServletContext().getRequestDispatcher("/templates/invoice/details.jsp").forward(request, response);
         }
     }
 
