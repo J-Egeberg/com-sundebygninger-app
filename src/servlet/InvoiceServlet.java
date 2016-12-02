@@ -9,7 +9,8 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Created by jensegebergrasmussen on 30/11/16.
  */
-@WebServlet( name = "InvoiceList", urlPatterns = { "/invoices/index", "/invoices/details", "/invoices/add" } )
+//alle requests der sendt mod /invoices/* kommer retur herindefra
+@WebServlet( name = "InvoiceList", urlPatterns = { "/invoices/*" } )
 public class InvoiceServlet extends HttpServlet{
 
     @Override

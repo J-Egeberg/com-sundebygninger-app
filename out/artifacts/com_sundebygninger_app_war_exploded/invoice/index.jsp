@@ -28,10 +28,9 @@
                 <%
                     List<Invoice> invoices = InvoiceController.getAllInvoices();
                     for (Invoice invoice : invoices) {
-
                         %>
                             <tr>
-                                <td> <% invoice.getInvoiceNumber(); %> </td>
+                                <td> <% out.print(invoice.getInvoiceNumber()); %> </td>
                                 <td> <% out.print( invoice.getCustomerFullName() ); %> </td>
                                 <td> <% out.print( invoice.getDate() );%> </td>
                                 <td> <% out.print( invoice.isSent() ? "Sendt" : "Afventer" ); %> </td>

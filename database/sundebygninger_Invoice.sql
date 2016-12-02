@@ -1,0 +1,1 @@
+INSERT INTO sundebygninger.Invoice (customerAddress, customerFullName, date, employeeName, invoiceNumber, isSent, officeAdress, officeName, paymentDetails, totalPrice) VALUES ('Danstrupvej 1', 'Jens Rasmussen', '27/3/91', 'Mads Madsen', '1', true, 'Officecity', 'OfficeOne', 'duo to 2016', 2500);

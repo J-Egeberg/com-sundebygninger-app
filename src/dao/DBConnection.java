@@ -8,7 +8,7 @@ public final class DBConnection {
 
     public static String USER = "root";
     public static String USERPW = "Highfem5";
-    public static String DBNAME = "app";
+    public static String DBNAME = "sundebygninger";
     public static String HOST = "localhost";
 
     public static Connection getConnection() throws SQLException, ClassNotFoundException {
