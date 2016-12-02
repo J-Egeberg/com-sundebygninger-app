@@ -13,10 +13,8 @@ public final class DBConnection {
 
     public static Connection getConnection() throws SQLException, ClassNotFoundException {
 
+        String url = String.format("jdbc:mysql://%s:3306/%s?useSSL=false", HOST, DBNAME);
 
-        String url = String.format("jdbc:mysql://%s:3306/%s", HOST, DBNAME);
-
-        //definerer driveren til at driveren bliver skrevet med MYSQL dialekt
         Class.forName("com.mysql.jdbc.Driver");
 
         return DriverManager.getConnection(url, USER, USERPW);
