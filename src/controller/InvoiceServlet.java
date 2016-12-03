@@ -1,4 +1,7 @@
-package servlet;
+package controller;
+
+import data.DBInvoice;
+import model.Invoice;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
@@ -8,6 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * Created by jensegebergrasmussen on 30/11/16.
@@ -28,8 +32,9 @@ public class InvoiceServlet extends HttpServlet {
                 RequestDispatcher requestDispatcher = servletContext.getRequestDispatcher("/templates/invoice/index.jsp");
                 requestDispatcher.forward(request, response);
             case "/invoices/add" :
+                //servletContext = getServletContext().setAttribute("invoice", DBInvoice.getInvoiceById(Long id));
                 getServletContext().getRequestDispatcher("/templates/invoice/form.jsp").forward(request, response);
-            case "/invoices/details" :
+            case "/invoices/" :
                 getServletContext().getRequestDispatcher("/templates/invoice/details.jsp").forward(request, response);
         }
     }
@@ -47,4 +52,10 @@ public class InvoiceServlet extends HttpServlet {
     public String getServletInfo() {
         return "En servlet for faktura";
     }
+
+    public static List<Invoice> getAllInvoices(){
+        return DBInvoice.getAllInvoices();
+    }
+
+
 }

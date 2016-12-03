@@ -5,7 +5,7 @@
   Time: 16:58
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page import="controller.InvoiceController" %>
+<%@ page import="controller.InvoiceServlet" %>
 <%@ page import="model.Invoice " %>
 <%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -33,7 +33,7 @@
                 </thead>
                 <tbody>
                     <%
-                        List<Invoice> invoices = InvoiceController.getAllInvoices();
+                        List<Invoice> invoices = InvoiceServlet.getAllInvoices();
                         for (Invoice invoice : invoices) {
                     %>
                         <tr>
