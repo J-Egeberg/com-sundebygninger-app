@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c55aea2-8fa6-411f-b1d5-c8c33e5e01cc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/ConnectionProfileNotFoundException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/create_database.sql" afterPath="$PROJECT_DIR$/database/create_database.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/InvoiceServlet.java" afterPath="$PROJECT_DIR$/src/controller/InvoiceServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data/DBConnection.java" afterPath="$PROJECT_DIR$/src/data/DBConnection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data/DBInvoice.java" afterPath="$PROJECT_DIR$/src/data/DBInvoice.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/templates/invoice/details.jsp" afterPath="$PROJECT_DIR$/web/templates/invoice/details.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/templates/invoice/index.jsp" afterPath="$PROJECT_DIR$/web/templates/invoice/index.jsp" />
     </list>
     <ignored path="com-sundebygninger-app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,7 +89,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DBConnection.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DBConnection.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/DBConnection.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
@@ -101,54 +99,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConnectionProfileNotFoundException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/ConnectionProfileNotFoundException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="70" lean-forward="false" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DBInvoice.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DBInvoice.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/data/DBInvoice.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="630">
-              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+              <caret line="42" column="5" lean-forward="false" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
               <folding>
                 <marker date="1481387913000" expanded="true" signature="365:386" ph="SELECT * FRO... invoice" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Invoice.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/Invoice.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InvoiceLine.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/InvoiceLine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sundebygninger.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/static/sundebygninger.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -158,6 +116,26 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
               <caret line="29" column="10" lean-forward="false" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="context.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/META-INF/context.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="37" lean-forward="true" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="headelements.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/templates/fragments/headelements.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="120" lean-forward="false" selection-start-line="12" selection-start-column="120" selection-end-line="12" selection-end-column="120" />
               <folding />
             </state>
           </provider>
@@ -176,8 +154,8 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/templates/invoice/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="63" lean-forward="false" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
+            <state relative-caret-position="15">
+              <caret line="1" column="27" lean-forward="false" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -186,8 +164,28 @@
       <file leaf-file-name="InvoiceServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/InvoiceServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+            <state relative-caret-position="525">
+              <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="details.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/templates/invoice/details.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/templates/invoice/form.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -245,7 +243,6 @@
         <option value="$PROJECT_DIR$/web/templates/fragments/gooter.jsp" />
         <option value="$PROJECT_DIR$/web/templates/fragments/head.jsp" />
         <option value="$PROJECT_DIR$/web/templates/invoice/form.jsp" />
-        <option value="$PROJECT_DIR$/web/templates/invoice/details.jsp" />
         <option value="$PROJECT_DIR$/web/templates/fragments/scripts.jsp" />
         <option value="$PROJECT_DIR$/web/templates/fragments/footer.jsp" />
         <option value="$PROJECT_DIR$/web/templates/fragments/navigation.jsp" />
@@ -256,13 +253,14 @@
         <option value="$PROJECT_DIR$/src/controller/InvoiceController.java" />
         <option value="$PROJECT_DIR$/src/servlet/InvoiceServlet.java" />
         <option value="$PROJECT_DIR$/src/control/InvoiceServlet.java" />
-        <option value="$PROJECT_DIR$/web/templates/invoice/index.jsp" />
         <option value="$PROJECT_DIR$/database/create_database.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bda2d89-97c5-4d50-bcbe-49e24ce106e8/console_1.sql" />
-        <option value="$PROJECT_DIR$/src/controller/InvoiceServlet.java" />
         <option value="$PROJECT_DIR$/src/data/DBConnection.java" />
         <option value="$PROJECT_DIR$/src/data/DBInvoice.java" />
         <option value="$PROJECT_DIR$/src/data/ConnectionProfileNotFoundException.java" />
+        <option value="$PROJECT_DIR$/web/templates/invoice/index.jsp" />
+        <option value="$PROJECT_DIR$/src/controller/InvoiceServlet.java" />
+        <option value="$PROJECT_DIR$/web/templates/invoice/details.jsp" />
       </list>
     </option>
   </component>
@@ -280,8 +278,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="707" />
-    <option name="y" value="58" />
+    <option name="x" value="706" />
+    <option name="y" value="56" />
     <option name="width" value="1967" />
     <option name="height" value="1261" />
   </component>
@@ -336,6 +334,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp-com-sundebygninger-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp-com-sundebygninger-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -415,37 +431,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="materialize" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp-com-sundebygninger-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp-com-sundebygninger-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="META-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -533,9 +519,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1208,16 +1194,17 @@
       <workItem from="1480968024725" duration="3637000" />
       <workItem from="1481059804111" duration="36000" />
       <workItem from="1481060052552" duration="598000" />
-      <workItem from="1481377703075" duration="2246000" />
+      <workItem from="1481377703075" duration="3779000" />
+      <workItem from="1481399143178" duration="1757000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41172000" />
+    <option name="totallyTimeSpent" value="44462000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="707" y="58" width="1967" height="1261" extended-state="0" />
-    <editor active="true" />
+    <frame x="706" y="56" width="1967" height="1261" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1237,12 +1224,12 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297456" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2694663" sideWeight="0.49626467" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20155844" sideWeight="0.4955414" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20363636" sideWeight="0.4955414" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5044586" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="UML design tool window" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="UML design tool window" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1278,7 +1265,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/lib/javax.servlet.jsp.jar!/javax/servlet/jsp/JspWriter.class" />
     <entry file="file://$PROJECT_DIR$/src/data/DBConnection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1433,20 +1419,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/fragments/headelements.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="120" lean-forward="false" selection-start-line="12" selection-start-column="120" selection-end-line="12" selection-end-column="120" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/InvoiceController.java" />
     <entry file="file://$PROJECT_DIR$/database/import_data.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="114" lean-forward="false" selection-start-line="2" selection-start-column="114" selection-end-line="2" selection-end-column="114" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1454,7 +1431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1462,7 +1438,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1470,7 +1445,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1486,7 +1460,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1494,7 +1467,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1502,7 +1474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1510,23 +1481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/invoice/form.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/invoice/details.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="33" lean-forward="false" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1534,30 +1488,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/fragments/footer.jsp">
+    <entry file="file://$PROJECT_DIR$/src/data/ConnectionProfileNotFoundException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="10" lean-forward="false" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/invoice/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="63" lean-forward="false" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
+        <state relative-caret-position="105">
+          <caret line="7" column="70" lean-forward="false" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
           <folding />
         </state>
       </provider>
@@ -1578,28 +1515,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/InvoiceServlet.java">
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+        <state relative-caret-position="870">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/DBInvoice.java">
+    <entry file="file://$PROJECT_DIR$/web/templates/invoice/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-          <folding>
-            <marker date="1481387913000" expanded="true" signature="365:386" ph="SELECT * FRO... invoice" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="1" column="27" lean-forward="false" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/ConnectionProfileNotFoundException.java">
+    <entry file="file://$PROJECT_DIR$/web/templates/fragments/headelements.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="70" lean-forward="false" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
+        <state relative-caret-position="180">
+          <caret line="12" column="120" lean-forward="false" selection-start-line="12" selection-start-column="120" selection-end-line="12" selection-end-column="120" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/fragments/footer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="10" lean-forward="false" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/META-INF/context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="37" lean-forward="true" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -1609,6 +1560,40 @@
         <state relative-caret-position="90">
           <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/InvoiceServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/invoice/form.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/invoice/details.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/DBInvoice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="5" lean-forward="false" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <marker date="1481387913000" expanded="true" signature="365:386" ph="SELECT * FRO... invoice" />
+          </folding>
         </state>
       </provider>
     </entry>
