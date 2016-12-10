@@ -1,0 +1,3 @@
+INSERT INTO sundebygninger.Invoice (customerAddress, customerFullName, date, employeeName, invoiceNumber, isSent, officeAdress, officeName, paymentDetails, totalPrice) VALUES ('Kronborg Ladegaardsvej 74B, 3000 Helsingør', 'Jonas Schelde', '2016-12-02', 'Anders Petersen', '2016001', true, 'Kongevejen 1', 'Sundebygninger A/S', 'Reg: 9999, Konto: 0123456789', 300);
+INSERT INTO sundebygninger.InvoiceLine (amount, description, price, pricePerUnit, productNumber, unit, invoice_id) VALUES (1, 'Bygningstjek', 200, 200, 1, 'stk.', 1);
+INSERT INTO sundebygninger.InvoiceLine (amount, description, price, pricePerUnit, productNumber, unit, invoice_id) VALUES (1, 'Lækagesøgning', 100, 100, 10, 'stk.', 1);
