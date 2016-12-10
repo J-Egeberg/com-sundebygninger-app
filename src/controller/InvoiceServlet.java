@@ -28,14 +28,14 @@ public class InvoiceServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         switch (request.getRequestURI()) {
             case "/invoices/index" :
-                ServletContext servletContext = getServletContext();
-                RequestDispatcher requestDispatcher = servletContext.getRequestDispatcher("/templates/invoice/index.jsp");
+                RequestDispatcher requestDispatcher = getServletContext().getRequestDispatcher("/templates/invoice/index.jsp");
                 requestDispatcher.forward(request, response);
             case "/invoices/add" :
-                //servletContext = getServletContext().setAttribute("invoice", DBInvoice.getInvoiceById(Long id));
-                getServletContext().getRequestDispatcher("/templates/invoice/form.jsp").forward(request, response);
+                RequestDispatcher requestDispatcher1 = getServletContext().getRequestDispatcher("/templates/invoice/form.jsp");
+                requestDispatcher1.forward(request, response);
             case "/invoices/" :
-                getServletContext().getRequestDispatcher("/templates/invoice/details.jsp").forward(request, response);
+                RequestDispatcher requestDispatcher2 = getServletContext().getRequestDispatcher("/templates/invoice/details.jsp");
+                requestDispatcher2.forward(request, response);
         }
     }
 
@@ -45,7 +45,7 @@ public class InvoiceServlet extends HttpServlet {
     }
 
     protected void processPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.setContentType("tex");
+        response.setContentType("text");
     }
 
     @Override

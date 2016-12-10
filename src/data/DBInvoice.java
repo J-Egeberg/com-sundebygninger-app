@@ -35,12 +35,10 @@ public class DBInvoice {
                 invoice.setSent(resultSet.getBoolean("isSent"));
                 invoices.add(invoice);
             }
-
-        } catch (SQLException | ClassNotFoundException exception) {
+        } catch (SQLException | ClassNotFoundException | ConnectionProfileNotFoundException exception) {
             System.out.printf( "\n\nIn DBInvoice, couldn't do: %s\n\n", exception.getMessage() );
             exception.printStackTrace();
         }
-
         return invoices;
     }
 
