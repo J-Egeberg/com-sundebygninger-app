@@ -17,7 +17,7 @@ public class DBInvoice {
     public static List<Invoice> getAllInvoices(){
         String sqlStatement = "SELECT * FROM invoice";
         List<Invoice> invoices = new ArrayList<>();
-        try (Connection connection = DBConnection.getConnection("test-js-mac");
+        try (Connection connection = DBConnection.getConnection("test-sundebygninger");
              Statement statement = connection.createStatement() ) {
             ResultSet resultSet = statement.executeQuery(sqlStatement);
             while(resultSet.next()){
