@@ -10,9 +10,8 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="jstl-1.2" />
           <element id="library" level="project" name="javax.servlet-api-3.0.1" />
-          <element id="library" level="project" name="jsp-api-2.2" />
-          <element id="library" level="project" name="mysql-connector-java-5.1.40-bin1" />
           <element id="library" level="project" name="mysql-connector-java-5.1.40-bin" />
+          <element id="library" level="project" name="jsp-api-2.0" />
         </element>
       </element>
     </root>
