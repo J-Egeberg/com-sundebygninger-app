@@ -15,9 +15,9 @@ import java.util.List;
 public class DBInvoice {
 
     public static List<Invoice> getAllInvoices(){
-        String sqlStatement = "SELECT * FROM invoice";
+        String sqlStatement = "SELECT * FROM Invoice";
         List<Invoice> invoices = new ArrayList<>();
-        try (Connection connection = DBConnection.getConnection("test-sundebygninger");
+        try (Connection connection = DBConnection.getConnection("test");
              Statement statement = connection.createStatement() ) {
             ResultSet resultSet = statement.executeQuery(sqlStatement);
             while(resultSet.next()){
@@ -32,7 +32,7 @@ public class DBInvoice {
                 invoice.setPaymentDetails(resultSet.getString("paymentDetails"));
                 invoice.setTotalPrice(resultSet.getInt("totalPrice"));
                 invoice.setInvoiceNumber(resultSet.getString("invoiceNumber"));
-                invoice.setSent(resultSet.getBoolean("isSent"));
+                invoice.setSent(resultSet.getBoolean("sent"));
                 invoices.add(invoice);
             }
         } catch (SQLException | ClassNotFoundException | ConnectionProfileNotFoundException exception) {
@@ -40,6 +40,34 @@ public class DBInvoice {
             exception.printStackTrace();
         }
         return invoices;
+    }
+
+    public static Invoice getOneInvoice(Long id){
+        String sqlStatement = String.format("SELECT * FROM Invoice WHERE id = %l",id);
+        List<Invoice> invoices = new ArrayList<>();
+        try (Connection connection = DBConnection.getConnection("test");
+             Statement statement = connection.createStatement() ) {
+            ResultSet resultSet = statement.executeQuery(sqlStatement);
+            while(resultSet.next()){
+                Invoice invoice = new Invoice();
+                invoice.setId( resultSet.getLong("id") );
+                invoice.setCustomerFullName(resultSet.getString("customerFullName"));
+                invoice.setCustomerAddress(resultSet.getString("customerAddress"));
+                invoice.setEmployeeName(resultSet.getString("employeeName"));
+                invoice.setOfficeName(resultSet.getString("officeName"));
+                invoice.setOfficeAdress(resultSet.getString("officeAdress"));
+                invoice.setDate(resultSet.getString("date"));
+                invoice.setPaymentDetails(resultSet.getString("paymentDetails"));
+                invoice.setTotalPrice(resultSet.getInt("totalPrice"));
+                invoice.setInvoiceNumber(resultSet.getString("invoiceNumber"));
+                invoice.setSent(resultSet.getBoolean("sent"));
+                invoices.add(invoice);
+            }
+        } catch (SQLException | ClassNotFoundException | ConnectionProfileNotFoundException exception) {
+            System.out.printf( "\n\nIn DBInvoice, couldn't do: %s\n\n", exception.getMessage() );
+            exception.printStackTrace();
+        }
+        return invoices.get(0);
     }
 
 }

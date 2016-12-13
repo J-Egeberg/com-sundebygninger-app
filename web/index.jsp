@@ -47,7 +47,7 @@
                     </div>
                     <div class="center">
                         <p class="grey-text">Denne sektion af platformen er af demonstrative formål til et skoleprojekt på CPHBusiness.</p>
-                        <p class="grey-text">Denne sektion påviser det lærte inden for JSP, JSTL, HttpServlet, SQL, MVC, Tomcat, MySQL og Linux</p>
+                        <p class="grey-text">Denne sektion påviser det lærte inden for JSP, HttpServlet, SQL, MVC, Tomcat, MySQL og Linux</p>
                         <p class="grey-text">Vi er gruppe nr. 2</p>
                     </div>
                 </div>

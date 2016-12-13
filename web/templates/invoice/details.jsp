@@ -5,6 +5,8 @@
   Time: 14:02
   To change this template use File | Settings | File Templates.
 --%>
+<%@ page import="model.Invoice" %>
+<%@ page import="controller.InvoiceServlet" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
   <head>
@@ -18,45 +20,52 @@
 
     <div class="container">
         <div class="row">
-            <form class="col s12">
-                <div class="row">
-                    <div class="input-field col s6">
-                        <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-                        <label for="first_name">Kundenavn</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <input id="last_name" type="text" class="validate">
-                        <label for="last_name">Last Name</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-                        <label for="disabled">Disabled</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="password" type="password" class="validate">
-                        <label for="password">Password</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="email" type="email" class="validate">
-                        <label for="email">Email</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12">
-                        This is an inline input field:
-                        <div class="input-field inline">
-                            <input id="email" type="email" class="validate">
-                            <label for="email" data-error="wrong" data-success="right">Email</label>
-                        </div>
-                    </div>
-                </div>
-            </form>
+            <%
+                Invoice invoice;
+                invoice = InvoiceServlet.getOneInvoice();
+            %>
+            <div class="col s12 l6 offset-l3">
+                <table class="bordered highlight">
+                    <tbody>
+                    <tr>
+                        <td>Kunde Adresse</td>
+                        <td> <% out.print( invoice.getCustomerAddress() ); %> </td>
+                    </tr>
+                    <tr>
+                        <td>Kunde Fulde navn</td>
+                        <td> <% out.print( invoice.getCustomerFullName() ); %> </td>
+                    </tr>
+                    <tr>
+                        <td>Dato</td>
+                        <td> <% out.print( invoice.getDate() ); %> </td>
+                    </tr>
+                    <tr>
+                        <td>Medarbejder navn</td>
+                        <td> <% out.print( invoice.getEmployeeName() ); %> </td>
+                    </tr>
+                    <tr>
+                        <td>Faktura nummer</td>
+                        <td> <% out.print( invoice.getInvoiceNumber() ); %> </td>
+                    </tr>
+                    <tr>
+                        <td>Leverandør navn</td>
+                        <td> <% out.print( invoice.getOfficeName() ); %> </td>
+                    </tr>
+                    <tr>
+                        <td>Leverandør adresse</td>
+                        <td> <% out.print( invoice.getOfficeAdress() ); %> </td>
+                    </tr>
+                    <tr>
+                        <td>Total pris</td>
+                        <td> <% out.print( invoice.getOfficeAdress() ); %> </td>
+                    </tr>
+                    <tr>
+                        <td>Betalingsoplysninger</td>
+                        <td> <% out.print( invoice.getPaymentDetails() ); %> </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 

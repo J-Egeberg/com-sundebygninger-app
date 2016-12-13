@@ -33,7 +33,7 @@ public class InvoiceServlet extends HttpServlet {
             case "/invoices/add" :
                 RequestDispatcher requestDispatcher1 = getServletContext().getRequestDispatcher("/templates/invoice/form.jsp");
                 requestDispatcher1.forward(request, response);
-            case "/invoices/" :
+            case "/invoices/1" :
                 RequestDispatcher requestDispatcher2 = getServletContext().getRequestDispatcher("/templates/invoice/details.jsp");
                 requestDispatcher2.forward(request, response);
         }
@@ -55,6 +55,10 @@ public class InvoiceServlet extends HttpServlet {
 
     public static List<Invoice> getAllInvoices(){
         return DBInvoice.getAllInvoices();
+    }
+
+    public static Invoice getOneInvoice() {
+        return DBInvoice.getOneInvoice(1L);
     }
 
 

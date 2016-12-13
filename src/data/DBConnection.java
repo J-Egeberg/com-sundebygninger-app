@@ -18,6 +18,12 @@ public final class DBConnection {
     public static String DBNAME_JS_MAC = "app";
     public static String HOST_JS_MAC = "localhost";
 
+    // Test Sundebygninger.com connection with data on Main App
+    public static String USER_TEST = "scheldejonas";
+    public static String USERPW_TEST = "Wildfly2016";
+    public static String DBNAME_TEST = "test";
+    public static String HOST_TEST = "sundebygninger.com";
+
     // Live Sundebygninger.com connection with data on Main App
     public static String USER_LIVE = "scheldejonas";
     public static String USERPW_LIVE = "Wildfly2016";
@@ -31,6 +37,10 @@ public final class DBConnection {
                 url = String.format("jdbc:mysql://%s:3306/%s?useSSL=false", HOST_JS_MAC, DBNAME_JS_MAC);
                 Class.forName("com.mysql.jdbc.Driver");
                 return DriverManager.getConnection(url, USER_JS_MAC, USERPW_JS_MAC);
+            case "test" :
+                url = String.format("jdbc:mysql://%s:3306/%s?useSSL=false", HOST_TEST, DBNAME_TEST);
+                Class.forName("com.mysql.jdbc.Driver");
+                return DriverManager.getConnection(url, USER_TEST, USERPW_TEST);
             case "live" :
                 url = String.format("jdbc:mysql://%s:3306/%s?useSSL=false", HOST_LIVE, DBNAME_LIVE);
                 Class.forName("com.mysql.jdbc.Driver");
