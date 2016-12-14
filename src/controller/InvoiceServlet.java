@@ -2,6 +2,7 @@ package controller;
 
 import data.DBInvoice;
 import model.Invoice;
+import model.InvoiceLine;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
@@ -38,7 +39,10 @@ public class InvoiceServlet extends HttpServlet {
             requestDispatcher.forward(request, response);
         }
         if (requestURI.contains("/jsp/invoices/") && idString.matches("[0-9]+")) {
-            int invoiceId = Integer.parseInt(idString);
+            Invoice invoice = getOneInvoice(Long.parseLong(idString));
+            List<InvoiceLine> invoiceLines = getInvoiceLinesFromInvoice(Long.parseLong(idString));
+            invoice.setInvoiceLines(invoiceLines);
+            request.setAttribute("invoice", invoice);
             requestDispatcher = getServletContext().getRequestDispatcher("/templates/invoice/details.jsp");
             requestDispatcher.forward(request, response);
         }
@@ -55,16 +59,18 @@ public class InvoiceServlet extends HttpServlet {
 
     @Override
     public String getServletInfo() {
-        return "En servlet for faktura";
+        return "En servlet for faktura dens tilbehør";
     }
 
     public static List<Invoice> getAllInvoices(){
         return DBInvoice.getAllInvoices();
     }
 
-    public static Invoice getOneInvoice() {
-        return DBInvoice.getOneInvoice(1L);
+    public static Invoice getOneInvoice(Long id) {
+        return DBInvoice.getOneInvoice(id);
     }
 
-
+    public static List<InvoiceLine> getInvoiceLinesFromInvoice(Long id) {
+        return DBInvoice.getInvoiceLinesFromInvoice(id);
+    }
 }

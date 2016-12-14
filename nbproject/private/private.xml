@@ -5,6 +5,7 @@
         <group>
             <file>file:/Users/scheldejonas/Git/jsp-com-sundebygninger-app/web/index.jsp</file>
             <file>file:/Users/scheldejonas/Git/jsp-com-sundebygninger-app/web/templates/fragments/headelements.jsp</file>
+            <file>file:/Users/scheldejonas/Git/jsp-com-sundebygninger-app/.gitignore</file>
             <file>file:/Users/scheldejonas/Git/jsp-com-sundebygninger-app/src/controller/InvoiceServlet.java</file>
             <file>file:/Users/scheldejonas/Git/jsp-com-sundebygninger-app/web/templates/fragments/navigation.jsp</file>
             <file>file:/Users/scheldejonas/Git/jsp-com-sundebygninger-app/web/templates/invoice/index.jsp</file>

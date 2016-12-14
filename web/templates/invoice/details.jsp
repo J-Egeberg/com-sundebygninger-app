@@ -7,7 +7,11 @@
 --%>
 <%@ page import="model.Invoice" %>
 <%@ page import="controller.InvoiceServlet" %>
+<%@ page import="model.InvoiceLine" %>
+<%@ page import="java.util.List" %>
+<%@ page import="data.DBInvoice" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<jsp:useBean id="invoice" scope="request" class="model.Invoice" />
 <html lang="en">
   <head>
     <%@ include file="../fragments/headelements.jsp" %>
@@ -20,11 +24,15 @@
 
     <div class="container">
         <div class="row">
-            <%
-                Invoice invoice;
-                invoice = InvoiceServlet.getOneInvoice();
-            %>
+            <div class="col s12 center-align">
+                <h2>Faktura detaljer</h2>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
             <div class="col s12 l6 offset-l3">
+                <br>
+                <br>
                 <table class="bordered highlight">
                     <tbody>
                     <tr>
@@ -55,14 +63,55 @@
                         <td>Leverandør adresse</td>
                         <td> <% out.print( invoice.getOfficeAdress() ); %> </td>
                     </tr>
+                    <tr class="divider"></tr>
                     <tr>
                         <td>Total pris</td>
-                        <td> <% out.print( invoice.getOfficeAdress() ); %> </td>
+                        <td> <% out.print( invoice.getTotalPrice() ); %> </td>
                     </tr>
                     <tr>
                         <td>Betalingsoplysninger</td>
                         <td> <% out.print( invoice.getPaymentDetails() ); %> </td>
                     </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h4>Faktura linjer</h4>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col s12">
+                <table class="bordered highlight">
+                    <thead>
+                        <tr>
+                            <th>Produkt nr.</th>
+                            <th>Beskrivelse</th>
+                            <th>Mængde</th>
+                            <th>Pris pr.</th>
+                            <th>Enhed</th>
+                            <th>Pris</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <%
+                        List<InvoiceLine> invoiceLineList = DBInvoice.getInvoiceLinesFromInvoice(invoice.getId());
+                        for (InvoiceLine invoiceLine : invoiceLineList
+                                ) {
+                    %>
+                    <tr>
+                        <td> <% out.print( invoiceLine.getProductNumber() ); %> </td>
+                        <td> <% out.print( invoiceLine.getDescription() ); %> </td>
+                        <td> <% out.print( invoiceLine.getAmount() ); %> </td>
+                        <td> <% out.print( invoiceLine.getPricePerUnit() ); %> </td>
+                        <td> <% out.print( invoiceLine.getUnit() ); %> </td>
+                        <td> <% out.print( invoiceLine.getPrice() ); %> </td>
+                    </tr>
+                    <%
+                        }
+                    %>
                     </tbody>
                 </table>
             </div>

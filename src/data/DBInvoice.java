@@ -1,6 +1,7 @@
 package data;
 
 import model.Invoice;
+import model.InvoiceLine;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -42,8 +43,8 @@ public class DBInvoice {
         return invoices;
     }
 
-    public static Invoice getOneInvoice(Long id){
-        String sqlStatement = String.format("SELECT * FROM Invoice WHERE id = %l",id);
+    public static Invoice getOneInvoice(Long id) {
+        String sqlStatement = String.format("SELECT * FROM Invoice WHERE id = %s", String.valueOf(id));
         List<Invoice> invoices = new ArrayList<>();
         try (Connection connection = DBConnection.getConnection("test");
              Statement statement = connection.createStatement() ) {
@@ -70,4 +71,28 @@ public class DBInvoice {
         return invoices.get(0);
     }
 
+    public static List<InvoiceLine> getInvoiceLinesFromInvoice(Long invoiceId) {
+        String sqlStatement = String.format("SELECT * FROM InvoiceLine WHERE invoice_id=%s",String.valueOf(invoiceId) );
+        System.out.printf("\n\n%s\n\n",sqlStatement);
+        List<InvoiceLine> invoicesLines = new ArrayList<>();
+        try (Connection connection = DBConnection.getConnection("test");
+             Statement statement = connection.createStatement() ) {
+            ResultSet resultSet = statement.executeQuery(sqlStatement);
+            while(resultSet.next()){
+                InvoiceLine invoiceLine = new InvoiceLine();
+                invoiceLine.setId( resultSet.getLong("id") );
+                invoiceLine.setAmount(resultSet.getInt("amount"));
+                invoiceLine.setDescription(resultSet.getString("description"));
+                invoiceLine.setPrice(resultSet.getInt("price"));
+                invoiceLine.setPricePerUnit(resultSet.getInt("pricePerUnit"));
+                invoiceLine.setProductNumber(resultSet.getInt("productNumber"));
+                invoiceLine.setUnit(resultSet.getString("unit"));
+                invoicesLines.add(invoiceLine);
+            }
+        } catch (SQLException | ClassNotFoundException | ConnectionProfileNotFoundException exception) {
+            System.out.printf( "\n\nIn DBInvoice, couldn't do: %s\n\n", exception.getMessage() );
+            exception.printStackTrace();
+        }
+        return invoicesLines;
+    }
 }

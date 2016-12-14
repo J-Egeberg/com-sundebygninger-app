@@ -20,7 +20,7 @@ public class Invoice {
 
     private String invoiceNumber;
 
-    private List<String> invoiceLines = new ArrayList<>();
+    private List<InvoiceLine> invoiceLines = new ArrayList<>();
     private int totalPrice;
 
     private String paymentDetails;
@@ -100,11 +100,11 @@ public class Invoice {
         this.invoiceNumber = invoiceNumber;
     }
 
-    public List<String> getInvoiceLines() {
+    public List<InvoiceLine> getInvoiceLines() {
         return invoiceLines;
     }
 
-    public void setInvoiceLines(List<String> invoiceLines) {
+    public void setInvoiceLines(List<InvoiceLine> invoiceLines) {
         this.invoiceLines = invoiceLines;
     }
 

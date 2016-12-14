@@ -42,7 +42,7 @@
                         <h2 class="center blue-text"><i class="material-icons">flash_on</i></h2>
                         <h5 class="center grey-text">Alle fakturaer</h5>
                         <div class="center">
-                            <a class="waves-light waves-effect blue btn-large" href="/invoices/index">Alle faktura</a>
+                            <a class="waves-light waves-effect blue btn-large" href="/jsp/invoices/index">Alle faktura</a>
                         </div>
                     </div>
                     <div class="center">

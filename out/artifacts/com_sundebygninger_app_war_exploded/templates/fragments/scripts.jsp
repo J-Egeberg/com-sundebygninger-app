@@ -8,5 +8,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="/static/vendor/materialize/js/materialize.js"></script>
-<script src="/static/vendor/materialize/js/init.js"></script>
+<script src="/jsp/static/vendor/materialize/js/materialize.js"></script>
+<script src="/jsp/static/vendor/materialize/js/init.js"></script>
