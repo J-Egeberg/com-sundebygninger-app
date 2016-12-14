@@ -26,16 +26,21 @@ public class InvoiceServlet extends HttpServlet {
 
     protected void processGet(HttpServletRequest request,HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        switch (request.getRequestURI()) {
-            case "/invoices/index" :
-                RequestDispatcher requestDispatcher = getServletContext().getRequestDispatcher("/templates/invoice/index.jsp");
-                requestDispatcher.forward(request, response);
-            case "/invoices/add" :
-                RequestDispatcher requestDispatcher1 = getServletContext().getRequestDispatcher("/templates/invoice/form.jsp");
-                requestDispatcher1.forward(request, response);
-            case "/invoices/1" :
-                RequestDispatcher requestDispatcher2 = getServletContext().getRequestDispatcher("/templates/invoice/details.jsp");
-                requestDispatcher2.forward(request, response);
+        String requestURI = request.getRequestURI();
+        String idString = requestURI.substring(requestURI.lastIndexOf('/') + 1);
+        RequestDispatcher requestDispatcher;
+        if (requestURI.equals("/jsp/invoices/index")) {
+            requestDispatcher = getServletContext().getRequestDispatcher("/templates/invoice/index.jsp");
+            requestDispatcher.forward(request, response);
+        }
+        if (requestURI.equals("/jsp/invoices/add")) {
+            requestDispatcher = getServletContext().getRequestDispatcher("/templates/invoice/form.jsp");
+            requestDispatcher.forward(request, response);
+        }
+        if (requestURI.contains("/jsp/invoices/") && idString.matches("[0-9]+")) {
+            int invoiceId = Integer.parseInt(idString);
+            requestDispatcher = getServletContext().getRequestDispatcher("/templates/invoice/details.jsp");
+            requestDispatcher.forward(request, response);
         }
     }
 

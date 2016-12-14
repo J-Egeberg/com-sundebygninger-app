@@ -8,14 +8,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <nav class="blue" role="navigation">
     <div class="nav-wrapper container">
-        <a id="logo-container" href="/" class="brand-logo">
-            <img src="/static/images/logo-sunde-bygninger-property.png">
+        <a id="logo-container" href="/jsp" class="brand-logo">
+            <img src="/jsp/static/images/logo-sunde-bygninger-property.png">
         </a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="/invoices/index">Faktura</a></li>
+            <li><a href="/jsp/invoices/index">Faktura</a></li>
         </ul>
         <ul id="nav-mobile" class="side-nav">
-            <li><a href="/invoices/index">Faktura</a></li>
+            <li><a href="/jsp/invoices/index">Faktura</a></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>

@@ -38,7 +38,7 @@ public final class DBConnection {
                 Class.forName("com.mysql.jdbc.Driver");
                 return DriverManager.getConnection(url, USER_JS_MAC, USERPW_JS_MAC);
             case "test" :
-                url = String.format("jdbc:mysql://%s:3306/%s?useSSL=false", HOST_TEST, DBNAME_TEST);
+                url = String.format("jdbc:mysql://%s:3306/%s", HOST_TEST, DBNAME_TEST);
                 Class.forName("com.mysql.jdbc.Driver");
                 return DriverManager.getConnection(url, USER_TEST, USERPW_TEST);
             case "live" :
