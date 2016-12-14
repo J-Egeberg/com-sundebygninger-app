@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c55aea2-8fa6-411f-b1d5-c8c33e5e01cc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/InvoiceServlet.java" afterPath="$PROJECT_DIR$/src/controller/InvoiceServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data/DBConnection.java" afterPath="$PROJECT_DIR$/src/data/DBConnection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/templates/fragments/headelements.jsp" afterPath="$PROJECT_DIR$/web/templates/fragments/headelements.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/templates/fragments/navigation.jsp" afterPath="$PROJECT_DIR$/web/templates/fragments/navigation.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nbproject/build-impl.xml" afterPath="$PROJECT_DIR$/nbproject/build-impl.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nbproject/genfiles.properties" afterPath="$PROJECT_DIR$/nbproject/genfiles.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nbproject/project.properties" afterPath="$PROJECT_DIR$/nbproject/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nbproject/project.xml" afterPath="$PROJECT_DIR$/nbproject/project.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/templates/invoice/index.jsp" afterPath="$PROJECT_DIR$/web/templates/invoice/index.jsp" />
     </list>
     <ignored path="com-sundebygninger-app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1048,7 +1047,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1232" y="83" width="1798" height="1261" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />

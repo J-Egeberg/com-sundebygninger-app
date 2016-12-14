@@ -38,16 +38,16 @@
                     %>
                         <tr>
                             <td>
-                                <a href="/invoices/<% out.print(invoice.getId()); %>"> <% out.print( invoice.getInvoiceNumber() ); %> </a>
+                                <a href="/jsp/invoices/<% out.print(invoice.getId()); %>"> <% out.print( invoice.getInvoiceNumber() ); %> </a>
                             </td>
                             <td>
-                                <a href="/invoices/<% out.print(invoice.getId());%>"> <% out.print( invoice.getCustomerFullName() ); %> </a>
+                                <a href="/jsp/invoices/<% out.print(invoice.getId());%>"> <% out.print( invoice.getCustomerFullName() ); %> </a>
                             </td>
                             <td>
-                                <a href="/invoices/<% out.print(invoice.getId());%>"> <% out.print( invoice.getDate() ); %> </a>
+                                <a href="/jsp/invoices/<% out.print(invoice.getId());%>"> <% out.print( invoice.getDate() ); %> </a>
                             </td>
                             <td>
-                                <a href="/invoices/<%out.print(invoice.getId());%>"> <% out.print( invoice.isSent() ? "Sendt" : "Afventer" ); %> </a>
+                                <a href="/jsp/invoices/<%out.print(invoice.getId());%>"> <% out.print( invoice.isSent() ? "Sendt" : "Afventer" ); %> </a>
                             </td>
                         </tr>
                     <%
