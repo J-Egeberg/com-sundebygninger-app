@@ -1,6 +1,6 @@
 ## Build indicies ##
 build/
-.out/
+out/
 
 ## Package Files ##
 *.jar
