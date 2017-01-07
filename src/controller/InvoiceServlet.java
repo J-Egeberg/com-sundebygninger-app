@@ -59,7 +59,7 @@ public class InvoiceServlet extends HttpServlet {
 
     @Override
     public String getServletInfo() {
-        return "En servlet for faktura dens tilbehør";
+        return "En servlet for faktura og dens tilbehør";
     }
 
     public static List<Invoice> getAllInvoices(){
