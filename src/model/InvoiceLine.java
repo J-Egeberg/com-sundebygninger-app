@@ -13,6 +13,8 @@ public class InvoiceLine {
     private int pricePerUnit;
     private int price;
 
+    private Invoice invoice;
+
     public InvoiceLine() {
     }
 

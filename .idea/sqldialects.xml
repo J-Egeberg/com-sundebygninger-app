@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+<<<<<<< HEAD
     <file url="file://$PROJECT_DIR$/database/createTable.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/database/sundebygninger_Invoice.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/database/sundebygninger_InvoiceLine.sql" dialect="MySQL" />
+=======
+    <file url="file://$PROJECT_DIR$/database/create_database.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/database/create_user.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/database/import_data.sql" dialect="MySQL" />
+>>>>>>> master
   </component>
 </project>

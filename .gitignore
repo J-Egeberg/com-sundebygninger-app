@@ -1,1 +1,16 @@
+<<<<<<< HEAD
 # Created by .ignore support plugin (hsz.mobi)
+=======
+## Build indicies ##
+build/
+out/
+
+## Package Files ##
+*.jar
+*.war
+*.ear
+
+## IntelliJ IDEA ##
+*.iml
+.idea/
+>>>>>>> master
