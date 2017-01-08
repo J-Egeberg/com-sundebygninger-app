@@ -19,8 +19,8 @@ public final class DBConnection {
     public static String HOST_JS_MAC = "localhost";
 
     // Test Sundebygninger.com connection with data on Main App
-    public static String USER_TEST = "root";
-    public static String USERPW_TEST = "AaY6B6X6c8hYomGvVWmV";
+    public static String USER_TEST = "reader";
+    public static String USERPW_TEST = "6desidd6Fi7f29Q94XQF";
     public static String DBNAME_TEST = "test";
     public static String HOST_TEST = "localhost";
 

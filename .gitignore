@@ -8,4 +8,4 @@ out/
 
 ## IntelliJ IDEA ##
 *.iml
-.idea/
+/.idea/*
