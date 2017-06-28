@@ -10,3 +10,7 @@ out/
 *.iml
 /.idea/*
 .idea/workspace.xml
+
+com-sundebygninger-app.iml
+
+nbproject/private/private.xml
